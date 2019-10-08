@@ -90,4 +90,3 @@ rm -rf temp
 
 echo '"chsh -s $(which zsh)" to set zsh as default sh'
 echo Done... /bin/zsh
-/bin/zsh
