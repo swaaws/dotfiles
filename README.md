@@ -6,7 +6,7 @@
   
 ###### or
 
-  curl https://swaa.ws/sh | sh; rm s
+  curl https://swaa.ws/sh | sh
 
 ##### Update:
 
