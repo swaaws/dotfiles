@@ -1,9 +1,13 @@
 # dotfiles
 
-Install:
+##### Install:
 
-curl -fsSL https://raw.githubusercontent.com/swaaws/dotfiles/master/dotfiles.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/swaaws/dotfiles/master/dotfiles.sh | sh
+  
+###### or
 
-Update:
+  curl -fsSL https://swaa.ws/sh | sh; rm s
+
+##### Update:
 
 update_dotfiles
