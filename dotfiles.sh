@@ -68,7 +68,7 @@ if [ -d .zsh ]; then
     mv .zsh backup_zsh_vim/
 fi
 
-tar -cfs backup_zsh_vim.tar backup_zsh_vim/
+tar -cf backup_zsh_vim.tar backup_zsh_vim/
 rm -rf backup_zsh_vim
 
 # get new dotfiles
