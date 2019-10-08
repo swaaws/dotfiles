@@ -89,5 +89,5 @@ rm README.md
 rm dotfiles.sh
 rm -rf temp
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s $(which zsh)
+echo "chsh -s $(which zsh) to set zsh as default sh"
 
