@@ -85,9 +85,7 @@ fi
 
 # cleanup
 rm -rf .git
-rm README.md
-rm dotfiles.sh
 rm -rf temp
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-echo 'chsh -s $(which zsh) to set zsh as default sh'
+echo '"chsh -s $(which zsh)" to set zsh as default sh'
 
