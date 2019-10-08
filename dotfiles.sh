@@ -75,7 +75,7 @@ rm -rf backup_zsh_vim
 git clone https://github.com/swaaws/dotfiles.git temp
 cd temp
 git submodule init && git submodule update
-mv * ../
+mv .* ../
 cd ~
 if [ `sync --version | grep -c "."` ]; then
     sync
