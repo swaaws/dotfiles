@@ -89,4 +89,4 @@ rm -rf .git
 rm -rf temp
 
 echo '"chsh -s $(which zsh)" to set zsh as default sh'
-echo Done... /bin/zsh
+echo Done... Run: $(which zsh)
