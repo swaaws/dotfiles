@@ -72,9 +72,10 @@ tar -cvf backup_zsh_vim.tar backup_zsh_vim/
 rm -rf backup_zsh_vim
 
 # get new dotfiles
-git clone https://github.com/swaaws/dotfiles.git .
+git clone https://github.com/swaaws/dotfiles.git temp
+cd temp
 git submodule init && git submodule update
-
+mv * ../
 if [ `sync --version | grep -c "."` ]; then
     sync
 else
@@ -85,7 +86,7 @@ fi
 rm -rf .git
 rm README.md
 rm dotfiles.sh
-
+rm -rf temp
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 
