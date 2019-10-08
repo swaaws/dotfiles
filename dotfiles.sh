@@ -40,7 +40,7 @@ cd ~
 if [ -d .git ]; then
     mkdir backup_dot_git
     mv .git backup_dot_git
-    tar -cvf backup_dot_git.tar backup_dot_git
+    tar -cf backup_dot_git.tar backup_dot_git
     rm -rf backup_dot_git
     echo "Found .git in your Home folder... be careful with big files"
     echo ".git folder moved to backup_dot_git.tar"
@@ -68,11 +68,11 @@ if [ -d .zsh ]; then
     mv .zsh backup_zsh_vim/
 fi
 
-tar -cvf backup_zsh_vim.tar backup_zsh_vim/
+tar -cfs backup_zsh_vim.tar backup_zsh_vim/
 rm -rf backup_zsh_vim
 
 # get new dotfiles
-git clone https://github.com/swaaws/dotfiles.git temp
+git clone -q https://github.com/swaaws/dotfiles.git temp
 cd temp
 git submodule init && git submodule update
 mv .* ~/
