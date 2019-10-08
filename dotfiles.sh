@@ -75,7 +75,7 @@ rm -rf backup_zsh_vim
 git clone https://github.com/swaaws/dotfiles.git temp
 cd temp
 git submodule init && git submodule update
-mv .* ../
+mv .* ~/
 cd ~
 if [ `sync --version | grep -c "."` ]; then
     sync
@@ -89,5 +89,5 @@ rm README.md
 rm dotfiles.sh
 rm -rf temp
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-echo "chsh -s $(which zsh) to set zsh as default sh"
+echo 'chsh -s $(which zsh) to set zsh as default sh'
 
