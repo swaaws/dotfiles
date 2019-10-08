@@ -76,6 +76,7 @@ git clone https://github.com/swaaws/dotfiles.git temp
 cd temp
 git submodule init && git submodule update
 mv * ../
+cd ~
 if [ `sync --version | grep -c "."` ]; then
     sync
 else
