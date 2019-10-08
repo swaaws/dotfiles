@@ -34,7 +34,8 @@ fi
 
 # go to home "~"
 cd ~
-
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Backup an existing .git folder... its stupid!
 if [ -d .git ]; then
@@ -86,7 +87,7 @@ fi
 # cleanup
 rm -rf .git
 rm -rf temp
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo '"chsh -s $(which zsh)" to set zsh as default sh'
 echo Done... /bin/zsh
 /bin/zsh
