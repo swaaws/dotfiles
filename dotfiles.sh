@@ -11,25 +11,25 @@ if [ `curl --version | grep -c "."` ]; then
     echo curl found
 else
     echo Please install curl
-    break
+    exit
 fi
 if [ `zsh --version | grep -c "."` ]; then
     echo zsh found
 else
     echo Please install zsh
-    break
+    exit
 fi
 if [ `git --version | grep -c "version"` ]; then
     echo git found
 else
     echo Please install git
-    break
+    exit
 fi
 if [ `tar --version | grep -c "."` ]; then
     echo tar found
 else
     echo Please install tar
-    break
+    exit
 fi
 
 # go to home "~"
